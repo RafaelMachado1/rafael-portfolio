@@ -2,6 +2,9 @@
 
 import { TechIcons } from "../components/TechIcons";
 import { ChevronDown } from "lucide-react";
+import { Button } from "../components/Button";
+
+// Usando 'export function' (exportação nomeada)
 
 export function Hero() {
   return (
@@ -27,15 +30,12 @@ export function Hero() {
             Construindo a próxima geração de aplicações descentralizadas com
             foco em performance, segurança e experiência do usuário.
           </p>
-          <a
-            href="#projects"
-            className="mt-8 inline-block bg-accent-primary text-gray-900 font-bold py-3 px-8 rounded-md transition-all duration-300 hover:bg-transparent hover:text-accent-primary border-2 border-transparent hover:border-acc"
-            // [ARQUITETO]: Corrigindo classe 'hover:border-acc' incompleta
-            // className="... hover:border-accent-primary" (Assumindo que essa era a intenção)
-          >
-            Ver Meus Projetos
-          </a>
-        </div>
+            <div className="mt-10">
+             <Button href="#projects">
+                Ver Meus Projetos
+             </Button>             
+            </div>
+       </div>
 
         {/* Módulo 2: Painel de Tecnologias */}
         {/* [ARQUITETO]: Este módulo será nosso PRÓXIMO alvo (Fase 3) */}
