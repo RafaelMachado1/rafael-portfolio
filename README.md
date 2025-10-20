@@ -1,73 +1,72 @@
-# React + TypeScript + Vite
+# Rafael Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfólio pessoal desenvolvido com React, TypeScript, Tailwind CSS e Vite. Apresenta projetos, tecnologias, informações de contato e efeitos visuais modernos (neon, partículas, animações).
 
-Currently, two official plugins are available:
+## Demonstração
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Link para o site publicado](https://rafadeveloper.com/) 
 
-## React Compiler
+## Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19.x
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion (animações)
+- Lucide React (ícones)
+- react-tsparticles (efeito de partículas)
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Layout responsivo para desktop, tablet e mobile
+- Efeito neon nos cards de projetos
+- Animação de partículas no fundo
+- Seções: Sobre, Projetos, Contato
+- Links para repositórios, demos e contratos
+- Interatividade aprimorada (hover, animações)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Estrutura do Projeto
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+  components/
+    Header.tsx
+    Footer.tsx
+    ProjectCard.tsx
+    TechIcons.tsx
+  sections/
+    Hero.tsx
+    About.tsx
+    Projects.tsx
+    Contact.tsx
+  data/
+    projects.ts
+  config/
+    particles-config.ts
+  assets/
+  hooks/
+  index.css
+  App.tsx
+  main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Como rodar localmente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/RafaelMachado1/rafael-portfolio.git
+cd rafael-portfolio
+npm install
+npm run dev
 ```
+
+## Deploy
+
+Recomenda-se Vercel, Netlify ou GitHub Pages para publicação.
+
+## Contribuição
+
+Este projeto é pessoal, mas sugestões são bem-vindas via Issues ou Pull Requests.
+
+## Licença
+
+MIT
