@@ -1,8 +1,8 @@
 // src/components/TechIcons.tsx
 
 // Ícones importados da biblioteca (verificados)
-import { 
-  SiReact, SiTypescript, SiJavascript, SiSolidity, 
+import {
+  SiReact, SiTypescript, SiJavascript, SiSolidity,
   SiEthereum, SiBitcoin, SiNodedotjs, SiTailwindcss,
   SiRust, SiPolygon, SiSolana, SiGit
 } from "react-icons/si";
@@ -33,11 +33,16 @@ export function TechIcons() {
   const iconBaseClasses = "w-9 h-9 text-gray-400 transition-all duration-300";
 
   return (
-    <div className="flex justify-center items-center gap-x-8 gap-y-6 flex-wrap pointer-events-auto">
+    /*
+      [ARQUITETO]: O *hardening* foi aplicado aqui.
+      - REMOVIDO: 'gap-x-8 gap-y-6' (Gaps rígidos)
+      - ADICIONADO: 'gap-4 md:gap-x-8 md:gap-y-6' (Gaps responsivos)
+    */
+    <div className="flex justify-center items-center gap-4 md:gap-x-8 md:gap-y-6 flex-wrap pointer-events-auto">
       {technologies.map(({ title, IconComponent }) => (
         <div key={title} title={title} className="cursor-pointer">
-          <IconComponent 
-            className={`${iconBaseClasses} hover:text-accent-primary hover:scale-125`} 
+          <IconComponent
+            className={`${iconBaseClasses} hover:text-accent-primary hover:scale-125`}
           />
         </div>
       ))}
