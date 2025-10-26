@@ -28,16 +28,15 @@ export interface Project {
  */
 export const projectData: Project[] = [
   {
-    id: 'p1-defi-loan',
-    title: 'Protocolo DeFi de Empréstimo',
+    id: 'Sentinel Pro',
+    title: 'Portfólio de Ativos',
     description:
-      'Um protocolo descentralizado para empréstimos de criptoativos com taxas de juros variáveis, construído na rede de testes Sepolia.',
-    imageUrl: '/images/project-defi-loan.png', // <<-- AÇÃO: Crie 'public/images/project-defi-loan.png'
-    techStack: ['Solidity', 'Hardhat', 'React', 'Ethers.js'], // Renomeado
+      'portfólio de ativos on-chain em tempo real. Simples, rápido e seguro.',
+    imageUrl: '/images/Sentinel-Pro.png', // <<-- AÇÃO: Crie 'public/images/Sentinel-Pro.png'
+    techStack: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Solidity' ], // Renomeado
     links: {
-      repo: 'https://github.com/seu-usuario/repo-defi',
-      live: 'https://meu-protocolo-defi.vercel.app',
-      contract: 'https://sepolia.etherscan.io/address/0x...', // <<-- AÇÃO: Adicione o link do contrato
+      repo: 'https://github.com/RafaelMachado1/sentinel-pro-notus',
+      live: 'https://sentinel-pro-notus-mkzv3ae4n-rafaelmachado1s-projects.vercel.app/',
     },
   },
   {
