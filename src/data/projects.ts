@@ -31,9 +31,9 @@ export const projectData: Project[] = [
     id: 'Sentinel Pro',
     title: 'Portfólio de Ativos',
     description:
-      'portfólio de ativos on-chain em tempo real. Simples, rápido e seguro.',
+      'Portfólio de ativos on-chain em tempo real. Simples, rápido e seguro. O objetivo do Sentinel Pro é fornecer aos usuários uma visão clara e atualizada de seus investimentos em criptomoedas, permitindo que tomem decisões informadas com base em dados precisos e em tempo real.',
     imageUrl: '/images/Sentinel-Pro.png', // <<-- AÇÃO: Crie 'public/images/Sentinel-Pro.png'
-    techStack: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Solidity' ], // Renomeado
+    techStack: ['React','Next.js', 'TypeScript', 'Solidity', 'Tailwind CSS', 'RaibowKit Wagami','Alchemy','CoinGecko', 'char.js, react-charjs-2','Vercel'], // Renomeado
     links: {
       repo: 'https://github.com/RafaelMachado1/sentinel-pro-notus',
       live: 'https://sentinel-pro-notus-mkzv3ae4n-rafaelmachado1s-projects.vercel.app/',
@@ -41,15 +41,15 @@ export const projectData: Project[] = [
   },
   {
     id: 'p2-dynamic-nfts',
-    title: 'Galeria de NFTs Dinâmicos',
+    title: 'Emissor de Certificados',
     description:
-      'Uma aplicação que exibe NFTs cujos metadados mudam com base em dados de oráculos on-chain, como o preço do ETH.',
-    imageUrl: '/images/project-dynamic-nft.png', // <<-- AÇÃO: Crie 'public/images/project-dynamic-nft.png'
-    techStack: ['Next.js', 'Tailwind CSS', 'Thirdweb', 'Chainlink'], // Renomeado
+      'Este projeto implementa uma solução completa para a emissão de certificados digitais utilizando a blockchain. A aplicação permite que um usuário conecte sua carteira digital, preencha os dados de um certificado e o emita, registrando um hash do conteúdo de forma imutável na blockchain e armazenando os metadados no IPFS.',
+    imageUrl: '/images/emissor-de-certificados.png', // <<-- AÇÃO: Crie 'public/images/project-dynamic-nft.png'
+    techStack: ['React', 'Vite', 'Material-UI', 'RaibowKit Wagami Viem Ethers.js', 'Hardhat', 'Solidity', 'IPFS através do Pinata', 'Node.js Express PostgreSQL'], // Renomeado
     links: {
-      repo: 'https://github.com/seu-usuario/repo-nft-gallery',
+      repo: 'https://github.com/RafaelMachado1/assessment',
       // 'live' é opcional, então omitir está correto
-      contract: 'https://sepolia.etherscan.io/address/0x...', // <<-- AÇÃO: Adicione o link do contrato
+      contract: 'https://github.com/RafaelMachado1/assessment/tree/main/blockchain/contracts', // <<-- AÇÃO: Adicione o link do contrato
     },
   },
   {
